@@ -54,8 +54,6 @@ A modern full-stack Book Library Management System with user authentication, ext
 ### **APIs**
 - Google Books API (External book search)
 
-## Quick Start
-
 ### Prerequisites
 - Node.js (v14 or higher)
 - MongoDB (Local or Atlas)
