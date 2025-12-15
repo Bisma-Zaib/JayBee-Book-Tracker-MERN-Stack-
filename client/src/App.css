@@ -1,0 +1,354 @@
+:root {
+  --tea-pink: #f8c8dc;
+  --tea-pink-dark: #f5b1cd;
+  --tea-pink-light: #fce4ec;
+  --tea-pink-lighter: #fef6f9;
+  --rose-gold: #e8b4b8;
+  --lavender: #e6e6fa;
+  --dusty-rose: #dca4a8;
+  --blush: #f5d0d4;
+  --soft-purple: #d8bfd8;
+  --text-dark: #5a4a4a;
+  --text-light: #8a7b7b;
+}
+
+/* Global Styles */
+body {
+  background-color: var(--tea-pink-lighter) !important;
+  color: var(--text-dark) !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Custom Navbar */
+.navbar-girly {
+  background: linear-gradient(135deg, var(--tea-pink), var(--rose-gold)) !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(216, 164, 168, 0.3);
+}
+
+ .bg-tea-pink {
+  background: var(--tea-pink);
+}
+
+.btn-pink {
+    background-color: var(--tea-pink-dark);
+}
+
+.text-tea-pink {
+    color: var(--tea-pink-dark) !important;
+}
+
+.navbar-brand {
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  color: white !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Custom Buttons */
+.btn-girly-primary {
+  background: linear-gradient(135deg, var(--tea-pink), var(--dusty-rose));
+  border: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-girly-primary:hover {
+  background: linear-gradient(135deg, var(--dusty-rose), var(--tea-pink-dark));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(216, 164, 168, 0.4);
+  color: white;
+}
+
+.btn-girly-success {
+  background: linear-gradient(135deg, #a8e6cf, #88d3a8);
+  border: none;
+  color: white;
+}
+
+.btn-girly-success:hover {
+  background: linear-gradient(135deg, #88d3a8, #6bc4a4);
+  color: white;
+}
+
+.btn-girly-warning {
+  background: linear-gradient(135deg, #ffd3b6, #ffaaa5);
+  border: none;
+  color: white;
+}
+
+.btn-girly-warning:hover {
+  background: linear-gradient(135deg, #ffaaa5, #ff8b94);
+  color: white;
+}
+
+.btn-girly-danger {
+  background: linear-gradient(135deg, #ff8b94, #ff6b6b);
+  border: none;
+  color: white;
+}
+
+.btn-girly-danger:hover {
+  background: linear-gradient(135deg, #ff6b6b, #ff5252);
+  color: white;
+}
+
+/* Cards */
+.card-girly {
+  background: white;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(248, 200, 220, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card-girly:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(248, 200, 220, 0.4);
+}
+
+/* Tables */
+.table-girly {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(248, 200, 220, 0.2);
+}
+
+.table-girly thead {
+  background: linear-gradient(135deg, var(--tea-pink), var(--rose-gold));
+  color: white;
+}
+
+.table-girly th {
+  border: none !important;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.table-girly td {
+  border-color: var(--tea-pink-light) !important;
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+/* Badges */
+.badge-girly {
+  background: linear-gradient(135deg, var(--lavender), var(--soft-purple));
+  color: var(--text-dark);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+}
+
+/* Status Badges */
+.badge-status-want {
+  background: linear-gradient(135deg, #ffd3b6, #ffaaa5);
+  color: white;
+}
+
+.badge-status-reading {
+  background: linear-gradient(135deg, #a8e6cf, #88d3a8);
+  color: white;
+}
+
+.badge-status-completed {
+  background: linear-gradient(135deg, #95e1d3, #74b49b);
+  color: white;
+}
+
+/* Filters Section */
+.filters-section {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 15px rgba(248, 200, 220, 0.2);
+  margin-bottom: 2rem;
+}
+
+/* Book Cards */
+.book-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(248, 200, 220, 0.2);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(248, 200, 220, 0.4);
+}
+
+.book-cover {
+  height: 200px;
+  background: linear-gradient(135deg, var(--tea-pink-light), var(--lavender));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  font-size: 3rem;
+}
+
+.book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-card-body {
+  padding: 1.5rem;
+}
+
+/* Stats Cards */
+.stats-card {
+  background: linear-gradient(135deg, var(--tea-pink-light), white);
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(248, 200, 220, 0.2);
+}
+
+.stats-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dusty-rose);
+  margin-bottom: 0.5rem;
+}
+
+.stats-label {
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+/* Form Controls */
+.form-control:focus {
+  border-color: var(--tea-pink);
+  box-shadow: 0 0 0 0.2rem rgba(248, 200, 220, 0.25);
+}
+
+.form-select:focus {
+  border-color: var(--tea-pink);
+  box-shadow: 0 0 0 0.2rem rgba(248, 200, 220, 0.25);
+}
+
+/* Custom Tabs */
+.nav-tabs .nav-link.active {
+  background: linear-gradient(135deg, var(--tea-pink), var(--rose-gold));
+  border: none;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-tabs .nav-link {
+  color: var(--text-light);
+  border: none;
+}
+
+/* Loading Animation */
+.loading-spinner {
+  color: var(--tea-pink);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .table-responsive {
+    border-radius: 10px;
+  }
+  
+  .filters-section {
+    padding: 1rem;
+  }
+}
+
+/* Girly Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Heart Rating */
+.heart-rating {
+  color: var(--rose-gold);
+}
+
+.heart-rating .bi-heart-fill {
+  color: var(--dusty-rose);
+}
+/* Line clamp for text truncation */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Better error handling for images */
+.book-cover img {
+  transition: opacity 0.3s ease;
+}
+
+.book-cover img:hover {
+  opacity: 0.9;
+}
+
+/* Base button */
+.btn-pink {
+  background-color: var(--tea-pink);       /* main pink color */
+  border: 1px solid var(--tea-pink-dark);  /* slightly darker border */
+  color: var(--text-dark);                 /* text color */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn-pink:hover {
+  background-color: var(--tea-pink-dark);  /* darken on hover */
+  border-color: var(--tea-pink-dark);
+  color: var(--text-dark);
+}
+
+/* Disabled state */
+.btn-pink:disabled {
+  background-color: var(--tea-pink-lighter);
+  border-color: var(--tea-pink-light);
+  color: var(--text-light);
+  cursor: not-allowed;
+}
+
+
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--tea-pink-light), var(--lavender));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  background: var(--tea-pink-lighter);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--dusty-rose);
+}
